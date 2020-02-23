@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" contend="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <TITLE>Responsive Side Menu</TITLE>
+    <link rel="icon" href="img/favicon.jpg" type="image/x-icon">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <TITLE>Coding Bootcamp Homework</TITLE>
     <link rel="stylesheet" href="css/style.css">
   </HEAD>
 
@@ -20,17 +22,19 @@
           </svg>
         </a>
       </span>
+      <!-- 
       <ul class="navbar-nav">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="#">Services</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
+    -->
     </nav>
     <div id="side-menu" class="side-nav">
       <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
-      <a href="#">Home</a>
-      <a href="#">About</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
       <a href="#">Services</a>
       <a href="#">Contact</a>
     </div>
@@ -41,7 +45,9 @@
     <script>
       function openSlideMenu() {
         document.getElementById('side-menu').style.width = '250px';
+        /*
         document.getElementById('main').style.marginLeft = '250px';
+        */
       }
 
       function closeSlideMenu() {

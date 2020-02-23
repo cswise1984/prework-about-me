@@ -4,37 +4,83 @@
 
 <head>
     <meta charset="utf-8">
-
-    <title>About the Author</title>
+    <meta name="viewport" contend="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="img/favicon.jpg" type="image/x-icon">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <TITLE>Coding Bootcamp Homework</TITLE>
     <link rel="stylesheet" href="css/about.css">
 
 </head>
 
 <body>
-    <header class='masthead'>
-        <p class='masthead-intro'>Hi I'm</p>
-        <h1 class='masthead-heading'>Your Name Here</h1>
-    </header>
-    <section class="details">
-      <h1>Introduction</h1>
-      <p>Details here...</p>
-      <h1>Where I'm From</h1>
-      <p>Details here...</p>
-      <h1>What are your favorite hobbies?</h1>
-      <p>Details here...</p>
-      <h1>What's your dream job?</h1>
-      <p>Details here...</p>
-      <h1>Where do you live?</h1>
-      <p>Details here...</p>
-      <h1>Why do you want to be a web developer?</h1>
-      <p>Details here...</p>
-    </section>
-
-    <footer id="footer">
-        <ul class="social">
-          <li><a href="http://www.github.com/usernamehere">Github</a></li>
+    <nav class="navbar">
+        <span class="open-slide">
+          <a href="#" onclick="openSlideMenu()">
+            <svg width="30" height="30">
+              <path d="M0,8 30,8" stroke="#FFF" stroke-width="5" />
+              <path d="M0,18 30,18" stroke="#FFF" stroke-width="5" />
+              <path d="M0,28 30,28" stroke="#FFF" stroke-width="5" />
+            </svg>
+          </a>
+        </span>
+        <!--
+        <ul class="navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
-    </footer>
+    -->
+      </nav>
+      <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </div>
+      <div id="main">
+        <header class='masthead'>
+            <p class='masthead-intro'>Hi I'm</p>
+            <h1 class='masthead-heading'>Christopher Wise</h1>
+        </header>
+        <section class="details">
+          <h1>Introduction</h1>
+          <p>Currently working at a construction accounting software company as a Implementation Specialist / Internal Training Coordinator, but I am looking for a new position in a different field.</p>
+          <h1>Where I'm From</h1>
+          <p>I was born in Cleveland, Ohio, but have moved around and have lived in a few <a class="ui-tooltip" title="severe or strict in manner, attitude, or appearance.">austere</a> locations throughout the world.</p>
+          <h1>What are your favorite hobbies?</h1>
+          <p>Details here...</p>
+          <h1>What's your dream job?</h1>
+          <p>Details here...</p>
+          <h1>Where do you live?</h1>
+          <p>Details here...</p>
+          <h1>Why do you want to be a web developer?</h1>
+          <p>Details here...</p>
+        </section>
+    
+        <footer id="footer">
+            <ul class="social">
+              <li><a href="http://www.github.com/usernamehere">Github</a></li>
+            </ul>
+        </footer>
+      </div>
+  
+      <script>
+        function openSlideMenu() {
+          document.getElementById('side-menu').style.width = '250px';
+          /*
+          document.getElementById('main').style.marginLeft = '250px';
+          */
+        }
+  
+        function closeSlideMenu() {
+          document.getElementById('side-menu').style.width = '0';
+          document.getElementById('main').style.marginLeft = '0';
+        }
+      </script>
+    
 </body>
 
 </html>
