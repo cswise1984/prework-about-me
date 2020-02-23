@@ -1,43 +1,55 @@
-<!doctype html>
+<!DOCTYPE HTML>
+<HTML>
 
-<html lang="en">
+  <HEAD>
+    <meta charset="UTF-8">
+    <meta name="viewport" contend="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <TITLE>Responsive Side Menu</TITLE>
+    <link rel="stylesheet" href="style.css">
+  </HEAD>
 
-<head>
-  <meta charset="utf-8">
+  <body>
+    <nav class="navbar">
+      <span class="open-slide">
+        <a href="#" onclick="openSlideMenu()">
+          <svg width="30" height="30">
+            <path d="M0,8 30,8" stroke="#FFF" stroke-width="5" />
+            <path d="M0,18 30,18" stroke="#FFF" stroke-width="5" />
+            <path d="M0,28 30,28" stroke="#FFF" stroke-width="5" />
+          </svg>
+        </a>
+      </span>
+      <ul class="navbar-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div id="side-menu" class="side-nav">
+      <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </div>
+    <div id="main">
+      <h1>Respinsive Side Menu</h1>
+    </div>
 
-  <title>About Me</title>
-  <link rel="stylesheet" href="css/style.css">
+    <script>
+      function openSlideMenu() {
+        document.getElementById('side-menu').style.width = '250px';
+        document.getElementById('main').style.marginLeft = '250px';
+      }
 
-</head>
+      function closeSlideMenu() {
+        document.getElementById('side-menu').style.width = '0';
+        document.getElementById('main').style.marginLeft = '0';
+      }
+    </script>
+    <!-- <script src="script.js"></script> -->
+  </body>
 
-<body>
-  <header class='masthead'>
-    <p class='masthead-intro'>Hi I'm</p>
-    <h1 class='masthead-heading'>Christopher Wise</h1>
-  </header>
-  <section class="details">
-    <h1>Introduction</h1>
-    <p>I am an Implementation Specialist for a Construction Accounting Software. I deal with training new clients how to
-      use our software while transitioning from their current accounting software. I am able to make these conversions
-      happen with the help of MS Excel as well as a little bit on inginuity and thinking outside the box based on what
-      my clients tell me about how they intend to utilize the software.</p>
-    <h1>Where I'm From</h1>
-    <p>Parma, OH</p>
-    <h1>What are your favorite hobbies?</h1>
-    <p>Snowboarding, Rock Climbing, and Video Games</p>
-    <h1>What's your dream job?</h1>
-    <p>Details here...</p>
-    <h1>Where do you live?</h1>
-    <p>Parma, OH but I have moved around the world a few times.</p>
-    <h1>Why do you want to be a web developer?</h1>
-    <p>Not having to talked with Clients would be very nice, headphones on with some nice music and designing based on their specifications.</p>
-  </section>
-
-  <footer id="footer">
-    <ul class="social">
-      <li><a href="http://www.github.com/cswise1984">Github</a></li>
-    </ul>
-  </footer>
-</body>
-
-</html>
+</HTML>
